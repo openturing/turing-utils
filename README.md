@@ -1,2 +1,2 @@
-# turing-configs
-Turing Configurations
+# Turing Utils
+Configuration Samples and Scripts.
