@@ -6,11 +6,11 @@
 		<field name="_root_" type="string" docValues="false" indexed="true" stored="false" />
 		<field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false" />
 		<field name="_version_" type="long" indexed="true" stored="true" />
-		<field name="description" type="text_general" multiValued="false" indexed="true" stored="true" />
+		<field name="abstract" type="text_general" multiValued="false" indexed="true" stored="true" />
 		<field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true" />
 		<field name="image" type="text_general" multiValued="false" indexed="true" stored="true" />
-		<field name="modificationDate" type="tdate" multiValued="false" indexed="true" stored="true" />
-		<field name="publicationDate" type="tdate" multiValued="false" indexed="true" stored="true" />
+		<field name="modification_date" type="tdate" multiValued="false" indexed="true" stored="true" />
+		<field name="publication_date" type="tdate" multiValued="false" indexed="true" stored="true" />
 		<field name="author" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="section" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="provider" type="string" multiValued="false" indexed="true" stored="true" />
@@ -28,10 +28,10 @@
 
 
 	</fields>
-	<copyField source="description" dest="_text_" />
+	<copyField source="abstract" dest="_text_" />
 	<copyField source="image" dest="_text_" />
-	<copyField source="modificationDate" dest="_text_" />
-	<copyField source="publicationDate" dest="_text_" />
+	<copyField source="modification_date" dest="_text_" />
+	<copyField source="publication_date" dest="_text_" />
 	<copyField source="author" dest="_text_" />
 	<copyField source="section" dest="_text_" />
 	<copyField source="title" dest="_text_" />
