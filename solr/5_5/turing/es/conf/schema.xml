@@ -13,7 +13,6 @@
 		<field name="publication_date" type="tdate" multiValued="false" indexed="true" stored="true" />
 		<field name="author" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="section" type="string" multiValued="false" indexed="true" stored="true" />
-		<field name="provider" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="text_spellcheck" type="text_spellcheck" multiValued="true" indexed="true" stored="false" />
 		<field name="text_suggest" type="text_suggest" multiValued="true" indexed="true" stored="false" />
 		<field name="title" type="text_general" multiValued="false" indexed="true" stored="true" />
