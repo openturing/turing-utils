@@ -25,8 +25,10 @@
 		<field name="turing_entity_PN" type="string" multiValued="true" indexed="true" stored="true" />
 		<field name="turing_entity_TIME" type="string" multiValued="true" indexed="true" stored="true" />
 		<field name="type" type="string" multiValued="false" indexed="true" stored="true" />
-
-
+		<field name="url" type="string" multiValued="false" indexed="true" stored="true" />
+		<field name="site" type="string" multiValued="false" indexed="true" stored="true" />
+		<field name="text" type="text_general" multiValued="true" indexed="true" stored="false" />
+		<field name="content" type="text_general" multiValued="true" indexed="true" stored="false" />
 	</fields>
 	<copyField source="abstract" dest="_text_" />
 	<copyField source="image" dest="_text_" />
@@ -43,6 +45,8 @@
 	<copyField source="turing_entity_PN" dest="_text_" />
 	<copyField source="turing_entity_TIME" dest="_text_" />
 	<copyField source="type" dest="_text_" />
+	<copyField source="site" dest="_text_" />
+	<copyField source="url" dest="_text_" />
 
 
 	<uniqueKey>id</uniqueKey>
