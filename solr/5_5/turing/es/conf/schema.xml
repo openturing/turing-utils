@@ -27,7 +27,17 @@
 		<field name="url" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="site" type="string" multiValued="false" indexed="true" stored="true" />
 		<field name="text" type="text_general" multiValued="true" indexed="true" stored="false" />
+
+		<!-- Apache Nutch -->
+		<field name="tstamp" type="tdate" multiValued="false" indexed="true" stored="true"/>
+		<field name="digest" type="text_general" multiValued="false" indexed="false" stored="true" />
+		<field name="displaydate" type="tdate" multiValued="false" indexed="true" stored="true"/>
+		<field name="host" type="text_general" multiValued="false" indexed="true" stored="true" />
+		<field name="boost" type="double" multiValued="false" indexed="true" stored="true"/>
+		<field name="segment" type="text_general" indexed="false" stored="true"/>
+		<field name="anchor" type="text_general" indexed="true" stored="false" multiValued="true"/>
 	</fields>
+	
 	<copyField source="abstract" dest="content" />
 	<copyField source="image" dest="content" />
 	<copyField source="modification_date" dest="content" />
@@ -46,6 +56,11 @@
 	<copyField source="site" dest="content" />
 	<copyField source="url" dest="content" />
 
+	<!-- Apache Nutch -->
+	<copyField source="tstamp" dest="content"/>
+	<copyField source="displaydate" dest="content"/>
+	<copyField source="host" dest="content" />
+	<copyField source="anchor" dest="content"/>
 
 	<uniqueKey>id</uniqueKey>
 
