@@ -58,7 +58,6 @@
 
 	<!-- Apache Nutch -->
 	<copyField source="tstamp" dest="content"/>
-	<copyField source="displaydate" dest="content"/>
 	<copyField source="host" dest="content" />
 	<copyField source="anchor" dest="content"/>
 
